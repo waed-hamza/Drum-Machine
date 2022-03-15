@@ -1,0 +1,41 @@
+.App {
+  text-align: center;
+  background-color: black;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  padding-top: 25px;
+  font-size: 40px;
+}
+
+#drum-machine {
+  margin-top: 60px;
+  height: 350px;
+  width: 700px;
+  border: 2px solid gray;
+  display: flex;
+}
+
+#display-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 350px;
+}
+
+#display {
+  background-color: #0f0f0f;
+  width: 200px;
+  height: 55px;
+  border: 1px solid gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}

@@ -1,0 +1,45 @@
+#drum-pads-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 330px;
+    padding: 10px;
+}
+
+.drum-pad {
+    font-size: 40px;
+    border-radius: 50px;
+    border: none;
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    background-color: #0f0f0f;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+.drum-pad:hover {
+    background-color: #9c27b0;
+    transition: all;
+    transition-duration: 0.8s;
+    transform: scale(1.1);
+}
+
+.activeStyle {
+    opacity: 0.5;
+    background-color: #9c27b0;
+}
+
+.disable {
+    font-size: 40px;
+    border-radius: 50px;
+    border: none;
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    background-color: #0f0f0f;
+    color: white;
+    opacity: 0.5;
+}
