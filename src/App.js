@@ -2,14 +2,15 @@ import { useState } from "react";
 import "./App.css";
 import DrumPads from "./components/DrumPads";
 import SwitchElement from "./components/SwitchElement";
+import { bankOne, bankTwo } from "./data/BanksData";
 
 function App() {
   const [bankNumber, setBankNumber] = useState(true);
   const [power, setPower] = useState(false);
   const [display, setDisplay] = useState("");
 
-  const handleBankNumber = (e, val) => {
-    setBankNumber(val);
+  const handleBankNumber = () => {
+    setBankNumber(!bankNumber);
   };
 
   const handlePower = () => {
@@ -26,7 +27,7 @@ function App() {
 
       <div id="drum-machine">
         <DrumPads
-          bankNumber={bankNumber}
+          bankNumber={bankNumber ? bankOne : bankTwo}
           power={power}
           handleDisplay={handleDisplay}
         />
